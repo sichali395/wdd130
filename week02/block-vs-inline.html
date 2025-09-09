@@ -18,19 +18,23 @@
         <div>In the HTML of this document, change this div element to a span element.</div>
 
         <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <p class="answer">No! it no longer takes up the full width.</p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
         <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
-        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe 
             how it flows within the line.</p>
+        <p class="answer">The new inline element flows seamlessly within the line of text inside the paragraph. It does not disrupt the layout of the paragraph (the block container). The text within the inline element will be emphasized (italic for <em>, bold for <strong>), but it will not cause any line breaks. This demonstrates that nesting inline elements inside a block element is standard, valid, and expected practice in HTML.</p>
 
         <h2>Task3: Nesting Block in Inline</h2>
         <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
             <p class="question">What error or layout issue do you see? Why does this happen?</p>
-
-
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+            <p class="answer">Placing a block-level element inside an inline-level element is invalid HTML according to the specification. The main issue you will see is that the browser will break the nesting. It will effectively "close" the “span” tag before the “div” starts. This happens because the content model for an inline element like “span” is only supposed to contain other inline elements. When the browser's parser encounters a block element where it shouldn't be, it corrects the invalid markup to create a valid document structure. Visually, this means the “div” will not be contained inside the “span”. The “div” will break onto a new line (as it is a block element) and appear after the now-closed “span”, completely breaking the intended layout.</p>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
+        <p class="observation">1. The image is an inline element (more specifically, a replaced inline element). It sits within the flow of text. You can see this because if you put text before and after it in the HTML, the text would appear on the same line as the image's bottom edge. However, you can set dimensions on it (as shown with width="300" height="300"), which is not typical for non-replaced inline elements like “span”.</p>
+        <p class="observation">2. The anchor tag is also an inline element. By default, it is displayed in blue, underlined text and only takes up the width of its content. It flows within a line of text without causing breaks.</p>
+        <p class="observation">3. The button is an inline element. It behaves like other inline elements, flowing within the line of text. However, it has a default width, height, and styling (provided by the operating system or user agent stylesheet) that makes it look like a interactive button.</p>
         <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
         <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
         <button type="button">&lt;button&gt; element</button>
