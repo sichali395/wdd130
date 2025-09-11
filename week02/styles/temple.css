@@ -1,20 +1,30 @@
+header {
+    text-align: center;
+    margin-bottom: 30xp;
+    padding: 20xp;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+   
+}
 /* General styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Header styles */
 h1 {
     text-align: center;
-    color: #1a4f72;
+    color: black;
     padding: 20px;
-    background-color: #e6f2ff;
-    border-bottom: 2px solid #1a4f72;
     margin: 0;
+
 }
 
 h2 {
@@ -41,6 +51,9 @@ main {
 /* About and Visiting sections */
 section {
     margin-bottom: 30px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* List styling */
@@ -60,11 +73,19 @@ hr {
     margin: 30px 0;
 }
 
+img {
+    width: auto;
+    height: auto;
+    border: 0px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
 /* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1a4f72;
+    background-color: black;
     color: white;
     margin-top: 30px;
 }
