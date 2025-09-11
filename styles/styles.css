@@ -9,11 +9,32 @@ nav a {
     padding: 20px;
 }
 
+main {
+    max-width: 840;
+}
+
+aside {
+    width: 30rem;
+    margin: 1 rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color:#333;
+    text-align: center;
+}
+
+p {padding: 0;}
+
+aside img {
+    width: 200px;
+    height: auto;
+    }
+
 h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -28,5 +49,8 @@ p {
 
 footer {
     padding: 30px;
-    color: orangered;
+    color: black;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
