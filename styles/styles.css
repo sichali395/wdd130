@@ -13,6 +13,15 @@ main {
     max-width: 840px;
 }
 
+main img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+p {padding: 0;}
+
 aside {
     width: 30rem;
     margin: 1rem;
@@ -23,8 +32,6 @@ aside {
     text-align: center;
 }
 
-p {padding: 0;}
-
 aside img {
     width: 200px;
     height: auto;
@@ -34,13 +41,6 @@ h1 {
     color: darkblue;
 }
 
-main img {
-    width: 200px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
 
 p {
     padding: 10px;
