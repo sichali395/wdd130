@@ -28,14 +28,14 @@ p {padding: 0;}
 aside img {
     width: 200px;
     height: auto;
-    }
+}
 
 h1 {
     color: darkblue;
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
