@@ -1,57 +1,86 @@
+/* course-styles.css */
+:root {
+  /* Color variables */
+  --color-primary: darkblue;
+  --color-secondary: steelblue;
+  --color-light: white;
+  --color-dark: #333;
+  --color-background: #eee;
+  --color-shadow: gray;
+  --color-border: rgba(0, 0, 0, 0.2);
+  --color-black: black;
+  
+  /* Spacing variables */
+  --spacing-xs: 2px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 1rem;
+  
+  /* Sizing variables */
+  --image-width: 200px;
+  --container-width: 840px;
+  --aside-width: 30rem;
+  
+  /* Typography variables */
+  --font-primary: 'Times New Roman', Times, serif;
+}
+
 nav {
-    background-color: darkblue ;
-    padding: 10px;
+  background-color: var(--color-primary);
+  padding: var(--spacing-sm);
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+  color: var(--color-light);
+  display: block;
+  padding: var(--spacing-md);
 }
 
 main {
-    max-width: 840px;
+  max-width: var(--container-width);
 }
 
 main img {
-    width: 200px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+  width: var(--image-width);
+  height: auto;
+  border: 1px solid var(--color-secondary);
+  padding: var(--spacing-xs);
+  box-shadow: 0 0 30px var(--color-shadow);
 }
 
-p {padding: 0;}
+p {
+  padding: 0;
+}
 
 aside {
-    width: 30rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color:#333;
-    text-align: center;
+  width: var(--aside-width);
+  margin: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xl);
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  text-align: center;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: var(--image-width);
+  height: auto;
 }
 
 h1 {
-    color: darkblue;
+  color: var(--color-primary);
 }
 
-
 p {
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+  padding: var(--spacing-sm);
+  font-family: var(--font-primary);
 }
 
 footer {
-    padding: 30px;
-    color: black;
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--color-black);
+  margin-top: 15px;
+  border-top: 1px solid var(--color-black);
+  text-align: center;
 }
