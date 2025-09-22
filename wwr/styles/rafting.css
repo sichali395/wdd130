@@ -111,18 +111,59 @@ header nav a:hover {
   font-size: 2.5rem;
 }
 
-/* Article Styles */
+/* Article Styles with Image Float */
 article {
   background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent1-color) 100%);
   color: white;
-  padding: 3rem 2rem;
+  padding: 2rem;
   margin: 3rem auto;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden; /* Clearfix for floated image */
 }
 
-article p {
+.hero article {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  width: 120px;
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid var(--accent1-color);
+}
+
+.hero article p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+/* Clearfix for floated images */
+.hero article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main article (not in hero) */
+main > article {
+  text-align: center;
+}
+
+main > article p {
   font-size: 1.3rem;
   line-height: 1.8;
   max-width: 800px;
@@ -205,6 +246,21 @@ footer p {
   .hero h1 {
     font-size: 1.8rem;
     padding: 1rem;
+  }
+  
+  .hero article {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    max-width: none;
+    margin: 1rem;
+  }
+  
+  .hero article img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
   }
   
   h1 {
