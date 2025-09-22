@@ -82,56 +82,48 @@ header nav a:hover {
   color: var(--primary-color);
 }
 
-/* Hero Section */
+/* Hero Section with Proper Overlay */
 .hero {
   position: relative;
   margin: 2rem auto;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  height: 600px;
 }
 
 .hero img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
 
 .hero h1 {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: rgba(34, 87, 122, 0.9);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   width: 80%;
   border-radius: 8px;
   font-size: 2.5rem;
+  text-align: center;
 }
 
-/* Article Styles with Image Float */
-article {
-  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent1-color) 100%);
-  color: white;
-  padding: 2rem;
-  margin: 3rem auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  overflow: hidden; /* Clearfix for floated image */
-}
-
+/* Article Overlay with Image Float */
 .hero article {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
   right: 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   color: var(--primary-color);
   padding: 1.5rem;
   border-radius: 8px;
-  max-width: 400px;
+  width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero article img {
@@ -151,23 +143,11 @@ article {
   text-align: left;
 }
 
-/* Clearfix for floated images */
+/* Clearfix for floated image */
 .hero article::after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Main article (not in hero) */
-main > article {
-  text-align: center;
-}
-
-main > article p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 /* Section Styles */
@@ -243,17 +223,21 @@ footer p {
     justify-content: center;
   }
   
+  .hero {
+    height: 400px;
+  }
+  
   .hero h1 {
     font-size: 1.8rem;
     padding: 1rem;
+    top: 10%;
   }
   
   .hero article {
     position: relative;
     bottom: auto;
-    left: auto;
     right: auto;
-    max-width: none;
+    width: auto;
     margin: 1rem;
   }
   
@@ -269,9 +253,5 @@ footer p {
   
   h2 {
     font-size: 1.6rem;
-  }
-  
-  article p {
-    font-size: 1.1rem;
   }
 }
