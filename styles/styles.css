@@ -58,8 +58,8 @@ main img {
 aside {
     width: 20rem;
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1;
+    grid-row: 1/4;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
@@ -71,8 +71,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 h1 {
@@ -82,15 +80,9 @@ h1 {
 }
 
 aside h2 {
-    position: absolute;
-    top: 1rem; /* Adjusted to position on top of the image */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0.5rem;
-    border-radius: 4px;
-    width: 90%;
-    text-align: center;
+    position: top;
+    top: 47px;
+    left: 150px;
 }
 
 p {
