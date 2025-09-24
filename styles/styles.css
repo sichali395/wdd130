@@ -12,7 +12,7 @@
   --border-radius: 4px;
 }
 
-header, .grid, footer {
+header, footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -58,7 +58,7 @@ main img {
 aside {
     width: 20rem;
     position: relative;
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 1/4;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
