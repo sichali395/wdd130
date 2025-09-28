@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 1.15em;
+    color: #2d3748;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    line-height: 1.7;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    margin: 1.5rem;
+    font-size: 2.4em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    display: grid;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1.2rem;
+    margin: 1.2rem;
+    border: 2px solid #e2e8f0;
+    padding: 1.8rem;
+    border-radius: 12px;
+    background-color: #f7fafc;
+    transition: border-color 0.3s ease;
+}
+
+fieldset:hover {
+    border-color: #cbd5e0;
+}
+
+legend {
+    padding: 0.8rem 1.5rem;
+    color: #4a5568;
+    font-size: 1.35em;
+    font-weight: 600;
+    background-color: #edf2f7;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1.2rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+input, select, textarea {
+    padding: 0.8rem;
+    font-size: 1.05rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #667eea;
+    background-color: #f7fafc;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    accent-color: #667eea;
+}
+
+button {
+    margin: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+footer {
+    margin: 2rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.7rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.7rem 0;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
+}
+
+.required::after {
+    content: " *";
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%234a5568' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 40px;
+    appearance: none;
+}
