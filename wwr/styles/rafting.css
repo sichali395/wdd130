@@ -20,6 +20,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /* Header */
@@ -30,7 +33,7 @@ header {
     padding: 1rem 2rem;
     background-color: #fff;
     border-bottom: 3px solid #2c5fa8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
 }
 
 header img {
@@ -47,8 +50,6 @@ nav a {
     color: #333;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s;
 }
 
 nav a:hover {
@@ -58,81 +59,58 @@ nav a:hover {
 
 /* Main content */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 1rem;
 }
 
-/* Page title */
-.page-title {
+h1 {
     text-align: center;
     color: #2c5fa8;
     font-size: 2.5rem;
     margin: 2rem 0;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c5fa8;
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
 }
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #2c5fa8 0%, #1e3a6b 100%);
+    background: #2c5fa8;
     color: white;
-    padding: 2.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    padding: 2rem;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 .hero p {
-    margin-bottom: 0.8rem;
+    margin: 0.5rem 0;
     font-size: 1.1rem;
 }
 
 .hero p:first-child {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Section headings */
-.section-heading {
-    text-align: center;
-    margin: 3rem 0 2rem;
-    color: #2c5fa8;
-    font-size: 2rem;
-    position: relative;
-}
-
-.section-heading::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #2c5fa8;
-    margin: 0.5rem auto;
-    border-radius: 2px;
+    margin-bottom: 1rem;
 }
 
 /* Contact section */
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin: 3rem 0;
-    align-items: start;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-/* Map */
 .map-container {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    height: fit-content;
 }
 
 .map-container iframe {
@@ -142,22 +120,19 @@ main {
     border-radius: 4px;
 }
 
-/* Contact form */
 .contact-form {
-    background-color: white;
+    background: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .contact-form h2 {
     color: #2c5fa8;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    text-align: center;
 }
 
-/* Form groups */
+/* Form styles */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -167,7 +142,6 @@ main {
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #555;
-    font-size: 0.9rem;
 }
 
 .form-group input[type="text"],
@@ -178,13 +152,6 @@ main {
     border: 2px solid #e0e0e0;
     border-radius: 4px;
     font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #2c5fa8;
 }
 
 .form-group textarea {
@@ -192,7 +159,6 @@ main {
     min-height: 100px;
 }
 
-/* Radio buttons */
 .radio-group {
     display: flex;
     flex-direction: column;
@@ -204,39 +170,30 @@ main {
     display: flex;
     align-items: center;
     font-weight: normal;
-    margin-bottom: 0;
-    cursor: pointer;
 }
 
 .radio-group input[type="radio"] {
     margin-right: 0.8rem;
-    transform: scale(1.1);
 }
 
-/* Checkbox */
 .checkbox-group {
     display: flex;
     align-items: center;
     background: #f8f9fa;
     padding: 1rem;
     border-radius: 4px;
-    border-left: 4px solid #2c5fa8;
 }
 
 .checkbox-group input[type="checkbox"] {
     margin-right: 0.8rem;
-    transform: scale(1.1);
 }
 
 .checkbox-group label {
-    margin-bottom: 0;
     font-weight: normal;
-    cursor: pointer;
 }
 
-/* Submit button */
 .submit-btn {
-    background: linear-gradient(135deg, #2c5fa8 0%, #1e3a6b 100%);
+    background: #2c5fa8;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -244,15 +201,11 @@ main {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
     width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(44, 95, 168, 0.3);
+    background: #1e3a6b;
 }
 
 /* Employee profiles */
@@ -264,20 +217,14 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .employee {
-    background-color: white;
-    padding: 2rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: white;
+    padding: 1.5rem;
     text-align: center;
-    transition: transform 0.3s;
-}
-
-.employee:hover {
-    transform: translateY(-5px);
+    border-radius: 8px;
 }
 
 .employee img {
@@ -292,133 +239,36 @@ main {
 .employee h3 {
     margin-bottom: 0.5rem;
     color: #333;
-    font-size: 1.2rem;
 }
 
 .employee p {
     color: #666;
     font-style: italic;
-    font-size: 0.9rem;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 footer p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .socialmedia {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-}
-
-.socialmedia a {
-    display: inline-block;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.1);
-    transition: all 0.3s;
-}
-
-.socialmedia a:hover {
-    background: #2c5fa8;
-    transform: scale(1.1);
+    gap: 1rem;
 }
 
 .socialmedia a img {
-    width: 24px;
-    height: 24px;
-    display: block;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
-    }
-    
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    .page-title {
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-    
-    .contact-section {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .profiles-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .hero {
-        padding: 2rem 1rem;
-    }
-    
-    .hero p:first-child {
-        font-size: 1.5rem;
-    }
-    
-    .section-heading {
-        font-size: 1.5rem;
-    }
-    
-    main {
-        padding: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-title {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-    
-    .hero p:first-child {
-        font-size: 1.3rem;
-    }
-    
-    .contact-form {
-        padding: 1.5rem;
-    }
-    
-    .map-container {
-        padding: 1rem;
-    }
-    
-    .map-container iframe {
-        height: 300px;
-    }
-    
-    .employee {
-        padding: 1.5rem 1rem;
-    }
-    
-    footer {
-        padding: 2rem 1rem;
-    }
-    
-    .socialmedia {
-        gap: 1rem;
-    }
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 * {
