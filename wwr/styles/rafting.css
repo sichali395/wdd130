@@ -22,7 +22,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Header Styles */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -56,14 +56,25 @@ nav a:hover {
     color: white;
 }
 
-/* Main Content Styles */
+/* Main content */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-/* Hero/Company Info Section */
+/* Page title */
+.page-title {
+    text-align: center;
+    color: #2c5fa8;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero section */
 .hero {
     background: linear-gradient(135deg, #2c5fa8 0%, #1e3a6b 100%);
     color: white;
@@ -87,7 +98,26 @@ main {
     letter-spacing: 1px;
 }
 
-/* Contact Section Layout */
+/* Section headings */
+.section-heading {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    color: #2c5fa8;
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #2c5fa8;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+/* Contact section */
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -96,7 +126,7 @@ main {
     align-items: start;
 }
 
-/* Map Container */
+/* Map */
 .map-container {
     background: white;
     padding: 1.5rem;
@@ -112,7 +142,7 @@ main {
     border-radius: 4px;
 }
 
-/* Contact Form Styles */
+/* Contact form */
 .contact-form {
     background-color: white;
     padding: 2rem;
@@ -127,6 +157,7 @@ main {
     text-align: center;
 }
 
+/* Form groups */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -150,8 +181,7 @@ main {
     transition: border-color 0.3s;
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
+.form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: #2c5fa8;
@@ -162,6 +192,7 @@ main {
     min-height: 100px;
 }
 
+/* Radio buttons */
 .radio-group {
     display: flex;
     flex-direction: column;
@@ -182,6 +213,7 @@ main {
     transform: scale(1.1);
 }
 
+/* Checkbox */
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -202,6 +234,7 @@ main {
     cursor: pointer;
 }
 
+/* Submit button */
 .submit-btn {
     background: linear-gradient(135deg, #2c5fa8 0%, #1e3a6b 100%);
     color: white;
@@ -222,26 +255,7 @@ main {
     box-shadow: 0 4px 12px rgba(44, 95, 168, 0.3);
 }
 
-/* Section Heading */
-.section-heading {
-    text-align: center;
-    margin: 3rem 0 2rem 0;
-    color: #2c5fa8;
-    font-size: 2rem;
-    position: relative;
-}
-
-.section-heading::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #2c5fa8;
-    margin: 0.5rem auto;
-    border-radius: 2px;
-}
-
-/* Employee Profiles */
+/* Employee profiles */
 .employee-profiles {
     margin: 2rem 0;
 }
@@ -287,7 +301,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
@@ -326,7 +340,7 @@ footer p {
     display: block;
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -338,6 +352,11 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+        margin: 1.5rem 0;
     }
     
     .contact-section {
@@ -368,6 +387,11 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .page-title {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
     .hero p:first-child {
         font-size: 1.3rem;
     }
