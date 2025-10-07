@@ -278,7 +278,7 @@ footer p {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(times-new-roman);
   color: var(--primary-color);
   line-height: 1.6;
   background-color: #f8f9fa;
@@ -291,7 +291,7 @@ header, main, footer {
 }
 
 h1, h2 {
-  font-family: var(--heading-font);
+  font-family: var(times-new-roman);
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
